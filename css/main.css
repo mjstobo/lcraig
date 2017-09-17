@@ -41,6 +41,15 @@ body {
     margin-top: 1em;
   }
   @supports (display: grid) {
+
+    .flex {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+    }
     .wrapper {
       display: grid;
       display: -webkit-grid;
@@ -55,7 +64,7 @@ body {
       padding: 0 2em 2em 0;
     }
   }
-  @supports not (display: grid) {
+/*  @supports not (display: grid) {
     .wrapper {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -96,7 +105,7 @@ body {
     .eng {
       margin-left: 30%;
   }
-}
+} */
   .text-container.left {
     text-align: right;
     width: 400px;
