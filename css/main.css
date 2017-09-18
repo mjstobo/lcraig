@@ -1,6 +1,6 @@
   @font-face {
   font-family: apercu;
-  src: url(/fonts/apercu-webfont.woff) format("woff"), url(/fonts/apercu-webfont.ttf) format("truetype");
+  src: url(fonts\apercu-webfont.woff) format("woff"), url(fonts/apercu-webfont.ttf) format("truetype");
 }
 
 a {
@@ -15,6 +15,8 @@ body {
   font-weight: 400;
   font-style: normal;
   line-height: 15px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 @media all and (min-width: 769px) {
@@ -195,7 +197,8 @@ body {
     }
     .wrapper>.text-container.right {
       margin-left: 30px;
-      flex-shrink: auto;
+      -ms-flex-negative: auto;
+          flex-shrink: auto;
     }
     .wrapper>.text-container.right.primary {
       margin-left: 55px;
