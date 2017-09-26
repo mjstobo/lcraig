@@ -18,7 +18,8 @@ function changeLang(lang){
   var profile = document.getElementById('profile');
   var currLang = document.getElementsByClassName('active')[0];
   var inactiveLang = document.getElementsByClassName('inactive')[0];
-  var logo = document.getElementById("logo");
+  var de_logo = document.getElementById("de_logo");
+  var en_logo = document.getElementById("en_logo");
 
   function switchActive(){
     inactiveLang.className = "active";
@@ -35,10 +36,11 @@ function changeLang(lang){
     profile.className = "text-container right primary";
     edu.className = "text-container left";
     exp.className ="text-container right";
-    logo.src = "img/lc_EN.svg";
-    logo.className = "eng";
-    logo.setAttribute("width","222");
-    logo.setAttribute("height", "38");
+    en_logo.src = "/img/lc_EN.svg";
+    en_logo.className = "eng";
+    de_logo.className ="ger hidden";
+    en_logo.setAttribute("width","222");
+    en_logo.setAttribute("height", "38");
     switchActive();
 
   } else if (lang == 'en') {
@@ -49,10 +51,13 @@ function changeLang(lang){
     profile.className = "text-container right primary de";
     edu.className = "text-container left de";
     exp.className = "text-container right de";
-    logo.src = "img/lc_DE.svg";
-    logo.className = "ger";
-    logo.setAttribute("width","298");
-    logo.setAttribute("height", "38");
+    de_logo.src = "/img/lc_DE.svg";
+    de_logo.className = "ger";
+    en_logo.className ="eng hidden";
+    de_logo.setAttribute("width","298");
+    de_logo.setAttribute("height", "38");
+    en_logo.setAttribute("display","none");
+    de_logo.setAttribute("visibility","visible");
     switchActive();
   }
 }

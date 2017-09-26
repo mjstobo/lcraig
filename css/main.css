@@ -31,6 +31,26 @@ body {
   display:none;
 }
 
+.eng {
+  content: url('../img/lc_EN.svg');
+  max-width: 222px;
+  max-height: 38px;
+}
+
+.ger {
+  content: url('../img/lc_DE.svg');
+  max-width: 296px;
+  max-height: 38px;
+}
+
+.hidden {
+  display: none;
+}
+
+#slider {
+  max-width: 590px;
+}
+
 @media all and (min-width: 769px) {
   p {
     font-size: 14px;
